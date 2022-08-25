@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="bg-slate-700 h-screen w-screen grid place-items-center">
+      <div
+        class="container min-h-[200px] max-w-[800px] bg-white rounded shadow-lg shadow-black/20"
+      >
+        <div class="question_container flex justify-center items-center">
+          <div class="w-full" data-type="step-1">
+            <h1
+              class="question-header text-4xl text-center text-black my-4 font-light"
+            >
+              Question 1 of 4:
+            </h1>
+            <div
+              class="divider border-b-[1px] border-gray-200 w-[90%] mx-auto"
+            ></div>
+            <div
+              class="question-text text-2xl text-center text-black my-6 font-light"
+            >
+              Are you over 45?
+            </div>
+            <div
+              class="button-container flex flex-col w-[90%] mx-auto gap-2 text-[24px] my-4"
+            >
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepOne();"
+              >
+                Yes
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepOne();"
+              >
+                No
+              </button>
+            </div>
+          </div>
+          <div class="w-full hidden" data-type="step-2">
+            <h1
+              class="question-header text-4xl text-center text-black my-4 font-light"
+            >
+              Question 2 of 4:
+            </h1>
+            <div
+              class="divider border-b-[1px] border-gray-200 w-[90%] mx-auto"
+            ></div>
+            <div
+              class="question-text text-2xl text-center text-black my-6 font-light"
+            >
+              Where do you live?
+            </div>
+            <div
+              class="button-container flex flex-col w-[90%] mx-auto gap-2 text-[24px] my-4"
+            >
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepTwo();"
+              >
+                United States
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepTwo();"
+              >
+                Canada
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepTwo();"
+              >
+                Elsewhere
+              </button>
+            </div>
+          </div>
+          <div class="w-full hidden" data-type="step-3">
+            <h1
+              class="question-header text-4xl text-center text-black my-4 font-light"
+            >
+              Question 3 of 4:
+            </h1>
+            <div
+              class="divider border-b-[1px] border-gray-200 w-[90%] mx-auto"
+            ></div>
+            <div
+              class="question-text text-2xl text-center text-black my-6 font-light"
+            >
+              Where does it hurt the most?
+            </div>
+            <div
+              class="button-container flex flex-col w-[90%] mx-auto gap-2 text-[24px] my-4"
+            >
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepThree();"
+              >
+                Knees
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepThree();"
+              >
+                Hands/Wrists
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepThree();"
+              >
+                Shoulder
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepThree();"
+              >
+                Other
+              </button>
+            </div>
+          </div>
+          <div class="w-full hidden" data-type="step-4">
+            <h1
+              class="question-header text-4xl text-center text-black my-4 font-light"
+            >
+              Question 4 of 4:
+            </h1>
+            <div
+              class="divider border-b-[1px] border-gray-200 w-[90%] mx-auto"
+            ></div>
+            <div
+              class="question-text text-2xl text-center text-black my-6 font-light"
+            >
+              Do you agree to use the recommended dosage?
+            </div>
+            <div
+              class="button-container flex flex-col w-[90%] mx-auto gap-2 text-[24px] my-4"
+            >
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepFour();"
+              >
+                I agree
+              </button>
+              <button
+                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
+                onclick="stepFour();"
+              >
+                I do not agree
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="surveyEval">
+          <h2 id="pss1-title" class="evalTitle hidden" data-step="1">
+            Checking your answers...
+          </h2>
+          <h2 id="pss2-title" class="evalTitle hidden" data-step="2">
+            Question 1: Processing...
+          </h2>
+          <h2 id="pss3-title" class="evalTitle hidden" data-step="3">
+            Question 2: Processing...
+          </h2>
+          <h2 id="pss4-title" class="evalTitle hidden" data-step="4">
+            Question 3: Processing...
+          </h2>
+          <h2 id="pss5-title" class="evalTitle hidden" data-step="5">
+            Question 4: Processing...
+          </h2>
+          <img
+            src="assets/img/Ellipsis-2.7s-200px.gif"
+            alt="loading"
+            class="loading hidden"
+            id="loadingImage"
+          />
+          <p id="pss1-text" class="evalText hidden" data-step="1">
+            Thank you. We are evaluating your answers.
+          </p>
+          <p id="pss2-text" class="evalText hidden" data-step="2">
+            Compiling data..
+          </p>
+          <p id="pss3-text" class="evalText hidden" data-step="3">
+            Checking...
+          </p>
+          <p id="pss4-text" class="evalText hidden" data-step="4">
+            Checking...
+          </p>
+          <p id="pss5-text" class="evalText hidden" data-step="5"></p>
+        </div>
+        <div class="hidden" id="congratsBox">
+          <div class="flex flex-col" id="surveyEnd2">
+            <p class="text-center text-3xl font-light my-2 px-4 mb-8 pt-4">
+              You are a match! You are approved to get a 14-day sample of
+              Instaflex Advanced! It will ship out within 48 hours so you'll get
+              it quickly, too!
+            </p>
+            <a href="#" class="flex w-[90%] mx-auto my-6">
+              <button
+                class="text-[24px] bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-4 w-full mx-auto"
+                onclick=""
+              >
+                Click Here to Claim Your Sample
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

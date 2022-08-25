@@ -96,7 +96,9 @@ select {
   }
 }
 
-#surveyEval h2 {
+.evalTitle {
+  font-size: 1.5rem;
+  font-weight: 400;
   margin-top: 0rem;
   text-align: center;
   padding-block: 15px;
@@ -137,7 +139,7 @@ select {
   ) !important;
   background-color: rgba(0, 0, 0, 0) !important;
   padding-inline: 10% !important;
-  padding-block: .1rem !important;
+  padding-block: 0.1rem !important;
 }
 #form button:hover {
   background-image: linear-gradient(

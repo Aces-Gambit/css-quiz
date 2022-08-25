@@ -147,7 +147,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepTwoProcessing, "show");
     }, 500);
-  }, 2000);
+  }, 1500);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepTwoProcessing, "fade-out");
@@ -168,7 +168,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepThreeProcessing, "show");
     }, 500);
-  }, 4000);
+  }, 3000);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepThreeProcessing, "fade-out");
@@ -189,7 +189,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepFourProcessing, "show");
     }, 500);
-  }, 6000);
+  }, 4500);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepFourProcessing, "fade-out");
@@ -210,7 +210,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepFiveProcessing, "show");
     }, 500);
-  }, 8000);
+  }, 6000);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepFiveProcessing, "fade-out");
@@ -233,5 +233,5 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClass(congratulations, "show");
     }, 500);
-  }, 11000);
+  }, 8500);
 }

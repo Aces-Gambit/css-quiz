@@ -10,7 +10,7 @@
     <title>Document</title>
   </head>
   <body>
-    <main class="bg-slate-700 h-screen w-screen grid place-items-center">
+    <main class="bg-slate-700 h-screen w-screen grid place-items-center px-2">
       <div
         class="container min-h-[200px] max-w-[800px] bg-white rounded shadow-lg shadow-black/20"
       >
@@ -27,7 +27,7 @@
             <div
               class="question-text text-2xl text-center text-black my-6 font-light"
             >
-              Are you over 45?
+              Are you over the age of 35?
             </div>
             <div
               class="button-container flex flex-col w-[90%] mx-auto gap-2 text-[24px] my-4"
@@ -73,12 +73,6 @@
                 class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
                 onclick="stepTwo();"
               >
-                Canada
-              </button>
-              <button
-                class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
-                onclick="stepTwo();"
-              >
                 Elsewhere
               </button>
             </div>
@@ -110,13 +104,13 @@
                 class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
                 onclick="stepThree();"
               >
-                Hands/Wrists
+                Shoulder/Neck
               </button>
               <button
                 class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
                 onclick="stepThree();"
               >
-                Shoulder
+                Elbows
               </button>
               <button
                 class="bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-3"
@@ -196,22 +190,21 @@
         </div>
         <div class="hidden" id="congratsBox">
           <div class="flex flex-col" id="surveyEnd2">
-            <p class="text-center text-3xl font-light my-2 px-4 mb-8 pt-4">
-              You are a match! You are approved to get a 14-day sample of
-              Instaflex Advanced! It will ship out within 48 hours so you'll get
-              it quickly, too!
+            <p class="text-center text-3xl font-light my-2 px-4 pt-4">
+              You are a match! You are approved to get a code for $5 off
+              Lifetones Uric Acid Support!
             </p>
-            <a href="#" class="flex w-[90%] mx-auto my-6">
-              <button
-                class="text-[24px] bg-gradient-to-r from-orange-600 to-orange-400 hover:to-orange-500 text-white rounded-full py-4 w-full mx-auto"
-                onclick=""
-              >
-                Click Here to Claim Your Sample
-              </button>
-            </a>
+            <div class="flex w-[90%] mx-auto my-6 justify-center">
+              <div class="klaviyo-form-Xej3wN" id="form"></div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+    <script
+      async
+      type="text/javascript"
+      src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=NBDsqw"
+    ></script>
   </body>
 </html>

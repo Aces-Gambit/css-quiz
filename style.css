@@ -125,3 +125,30 @@ select {
   opacity: 0;
   transition: opacity 300ms ease-in-out;
 }
+
+#form {
+  width: 100% !important;
+}
+#form button {
+  background-image: linear-gradient(
+    to right,
+    rgb(234, 88, 12),
+    rgb(251, 146, 60)
+  ) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding-inline: 10% !important;
+  padding-block: .1rem !important;
+}
+#form button:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(234, 88, 12),
+    rgb(234, 88, 12)
+  ) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  padding-inline: 10% !important;
+  width: 100% !important;
+}
+#form input {
+  text-align: center !important;
+}

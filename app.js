@@ -10,6 +10,7 @@ const stepThreeProcessing = document.querySelectorAll('[data-step="3"]');
 const stepFourProcessing = document.querySelectorAll('[data-step="4"]');
 const stepFiveProcessing = document.querySelectorAll('[data-step="5"]');
 const congratulations = document.querySelector("#congratsBox");
+const form = document.querySelector("#form");
 
 //function which appends the class active to an element
 function addClass(element, className) {
@@ -146,7 +147,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepTwoProcessing, "show");
     }, 500);
-  }, 3000);
+  }, 2000);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepTwoProcessing, "fade-out");
@@ -167,7 +168,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepThreeProcessing, "show");
     }, 500);
-  }, 6000);
+  }, 4000);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepThreeProcessing, "fade-out");
@@ -188,7 +189,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepFourProcessing, "show");
     }, 500);
-  }, 9000);
+  }, 6000);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepFourProcessing, "fade-out");
@@ -209,7 +210,7 @@ function stepFour() {
       //adjust the opacity of processing elements to visible
       addClassToArray(stepFiveProcessing, "show");
     }, 500);
-  }, 12000);
+  }, 8000);
   setTimeout(() => {
     //fadeout existing processing elements
     addClassToArray(stepFiveProcessing, "fade-out");
@@ -221,16 +222,16 @@ function stepFour() {
       addClass(congratulations, "fade-in");
       //resize the window to fit the processing elements
       removeClass(congratulations, "hidden");
+      //hide the loading animation
+      addClass(loading, "hidden");
     }, 300);
     setTimeout(() => {
       //clean up the previous processing elements class list
       removeClassFromArray(stepFiveProcessing, "fade-out");
       removeClassFromArray(stepFiveProcessing, "fade-in");
       removeClassFromArray(stepFiveProcessing, "show");
-      //hide the loading animation
-      addClass(loading, "hidden");
       //adjust the opacity of processing elements to visible
       addClass(congratulations, "show");
     }, 500);
-  }, 16000);
+  }, 11000);
 }
